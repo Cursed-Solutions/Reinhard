@@ -12,6 +12,10 @@ and [Hikari](https://github.com/hikari-py/hikari)
 The standard instance of this bot can be invited to your guild using this
 [invite link](https://discord.com/oauth2/authorize?client_id={me.id}&scope=bot%20applications.commands&permissions=8)
 
+# Support
+
+Go to the [support server](https://discord.gg/bZ7BrYJ63g) for support.
+
 ### Self-hosted.
 
 This can be self hosted through only a few easy steps:
