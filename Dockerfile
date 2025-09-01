@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/ubi9/python-312@sha256:946e1165dde472e1ab670fee010db9eafb8011964358a06e0d370a0bc0b1f06b as gen_ref_indexes
+FROM registry.access.redhat.com/ubi9/python-312@sha256:83b01cf47b22e6ce98a0a4802772fb3d4b7e32280e3a1b7ffcd785e01956e1cb as gen_ref_indexes
 
 WORKDIR /code
 
@@ -8,7 +8,7 @@ COPY ./scripts/gen_ref_index.py ./gen_ref_index.py
 RUN python -m pip install -r ./references.txt && \
     python ./gen_ref_index.py default --out-dir ./indexes
 
-FROM registry.access.redhat.com/ubi9/python-312@sha256:946e1165dde472e1ab670fee010db9eafb8011964358a06e0d370a0bc0b1f06b
+FROM registry.access.redhat.com/ubi9/python-312@sha256:83b01cf47b22e6ce98a0a4802772fb3d4b7e32280e3a1b7ffcd785e01956e1cb
 WORKDIR /reinhard
 
 COPY ./reinhard ./reinhard
