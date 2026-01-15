@@ -1,3 +1,7 @@
+# Archived
+
+Due to the attitude of Hikari's owner causing too much friction and lack of usage this project has been archived.
+
 # Reinhard
 
 Reference implementation of a Python 3.12+ Hikari-Tanjun bot.
